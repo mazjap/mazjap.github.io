@@ -167,15 +167,15 @@
                 <h1>Contact</h1>
                 <h6>If you need to find me</h6>
             </div>
-            <form action="contact-form-handler.php">
+            <form action="contact-form-handler.php" method="POST">
                 <label for="name">Name:</label>
-                <input for="text" id="name" name="name" placeholder="Enter name" required>
+                <input for="text" id="name" name="name" placeholder="Name" required>
                 <label for="email">Email:</label>
-                <input for="text" id="email" name="email" placeholder="Enter email" required>
+                <input for="text" id="email" name="email" placeholder="Email" required>
                 <label for="subject">Subject:</label>
                 <input for="text" id="subject" name="subject" placeholder="Subject" required>
                 <label for="body">Message:</label>
-                <textarea name="submit" id="Submit" placeholder="Message" cols="10" rows="10" required></textarea>
+                <textarea name="body" id="body" placeholder="Message" cols="10" rows="10" required></textarea>
                 <input type="submit" value="Submit">
             </form>
         </div>
