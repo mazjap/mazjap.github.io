@@ -7,10 +7,12 @@
 
     <title>Jordan Christensen</title>
 
-    <meta name="description" content="My portfolio website."/>
+    <meta name="description" content="Portfolio website"/>
     <meta name="author" content="Jordan Christensen"/>
 		
-    <link rel="shortcut icon" href="src/favicon.png">
+    <link rel="shortcut icon" href="src/favicon.ico">
+    <link rel="icon" type="image/png" href="/path/to/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/path/to/icons/favicon-32x32.png" sizes="32x32">
 		
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -57,10 +59,10 @@
     
     <section class="about" id="about">
         <div class="container">
-            <div class="profile-img data-aos">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
                 <img src="src/Profile.png" alt="">
             </div>
-            <div class="about-details">
+            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
                 <div class="about-heading">
                     <h1>About Me</h1>
                 </div>
@@ -96,10 +98,10 @@
                 <h6>My most recent projects</h6>
             </div>
             <div class="project-item">
-                <div class="project-img has-margin-right">
+                <div class="project-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
                     <img src="src/ProjectTempImg.jpg">
                 </div>
-                <div class="project-description">
+                <div class="project-description" data-aos="fade-left" data-aos-delay="600">
                     <h6>Web Development</h6>
                     <h1>Portfolio Website</h1>
                     <p>Brief description of project</p>
@@ -108,22 +110,22 @@
                 </div>
             </div>
             <div class="project-item">
-               <div class="project-description has-margin-right">
+               <div class="project-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
                     <h6>iOS Development</h6>
                     <h1>Custom Password TextField</h1>
                     <p>Brief description of project</p>
                     <!TODO: Create links to projects>
                     <a href="#" class="view-details">View Project</a>
                 </div>
-                <div class="project-img">
+                <div class="project-img" data-aos="fade-left" data-aos-delay="600">
                     <img src="src/ProjectTempImg.jpg">
                 </div>
             </div>
             <div class="project-item">
-                <div class="project-img has-margin-right">
+                <div class="project-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
                     <img src="src/ProjectTempImg.jpg">
                 </div>
-                <div class="project-description">
+                <div class="project-description" data-aos="fade-left" data-aos-delay="600">
                     <h6>iOS Development</h6>
                     <h1>Color Picker App</h1>
                     <p>Brief description of project</p>
@@ -140,7 +142,7 @@
                 <h1>Experience</h1>
                 <h6>Current and past work and schooling experience</h6>
             </div>
-            <div class="timeline">
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
                 <ul>
                     <li class="date" data-date="2019 - Present">
                         <h1>Lambda</h1>
@@ -159,13 +161,13 @@
         </div>
     </section>
     
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-aos="fade-in" data-aos-delay="300">
         <div class="container">
             <div class="section-heading">
                 <h1>Contact</h1>
                 <h6>If you need to find me</h6>
             </div>
-            <form action="">
+            <form action="contact-form-handler.php">
                 <label for="name">Name:</label>
                 <input for="text" id="name" name="name" placeholder="Enter name" required>
                 <label for="email">Email:</label>
@@ -173,7 +175,7 @@
                 <label for="subject">Subject:</label>
                 <input for="text" id="subject" name="subject" placeholder="Subject" required>
                 <label for="body">Message:</label>
-                <textarea name="submit" id="Submit" placeholder="Message" cols="10" rows="10"></textarea>
+                <textarea name="submit" id="Submit" placeholder="Message" cols="10" rows="10" required></textarea>
                 <input type="submit" value="Submit">
             </form>
         </div>
