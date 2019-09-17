@@ -19,7 +19,7 @@ body {
 }
 
 section {
-    padding: 6rem 0 20rem 0;
+    padding: 6rem 0 0 0;
 }
 
 a {
@@ -85,10 +85,6 @@ img {
 .section-heading h6 {
     font-size: 1.6rem;
     font-weight: 300;
-}
-
-.has-margin-right {
-    margin-right: 5rem;
 }
 
 header {
@@ -221,226 +217,48 @@ li {
 }
 /* End Landing Info */
 
-/* About */
-.about .container {
+/* Blog */
+
+.blog .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #272727;
+    border-radius: 50px;
+    margin-bottom: 10rem;
 }
 
-.about-heading {
+.blog-description {
     text-align: center;
-    text-transform: uppercase;
+    margin-bottom: 3rem;
+    margin: 5rem 5rem 10rem 5rem;
+}
+
+.blog-description h1 {
+    font-size: 8rem;
+    opacity: .3;
     margin-bottom: 3rem;
 }
 
-.about-heading h1 {
-    font-size: 8rem;
-    opacity: .3;
-}
-
-.about-heading h6 {
+.blog-description h6 {
     font-size: 2rem;
     font-weight: 300;
 }
 
-.profile-img {
-    flex: 1;
-    margin-right: 5rem;
-}
-
-.about-details {
-    flex: 1.5;
-}
-
-.social-media {
-    margin-top: 5rem;
-}
-
-.social-details {
-    font-size: 2rem;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-.social-media i {
-    font-size: 5rem;
-    transition: color 300ms;
-}
-
-.fa-github-square:hover {
-    color: #000000;
-}
-
-.fa-twitter-square:hover {
-    color: #38a1f3;
-}
-
-.fa-linkedin:hover {
-    color: #0e76a8;
-}
-/* End About */
-
-/* Projects */
-.project-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5rem;
-}
-
-.project-item:last-child {
-    margin-bottom: 0;
-}
-
-.project-img {
-    width: 50rem;
-    flex: 1;
-}
-
-.project-description {
-    flex: 1;
-}
-
-.project-description h1 {
-    font-size: 3rem;
-    font-weight: 300;
-    margin: 1rem, 0;
-}
-
-.project-description h6 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 300;
-    opacity: 0.3;
-}
-
-.project-description .view-details {
-    display: inline-block;
-    margin-top: 2.5rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: #3883ff;
-    transition: color 650ms;
-}
-
-.project-description .view-details:hover {
-    color: #2f67cd;
-}
-/* End Projects */
-
-/* Timeline */
-.timeline ul {
-    border-left: 4px solid #ffe838;
-    border-radius: .8rem;
-    background-color: rgba(0,0,0,0.05);
-    margin: auto;
-    padding: 5rem;
-    list-style: none;
+.blog-description p {
     text-align: left;
-    width: 50%;
+    margin-bottom: 3rem;
 }
 
-.timeline h1 {
+.blog-description a {
+    text-align: center;
     font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    opacity: .3;
 }
 
-.timeline p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
+.blog-description a:hover {
+    color: #aaa;
 }
-
-.timeline .date {
-    border-bottom: 1px solid rgba(255,255,255, 0.1);
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    position: relative;
-}
-
-.timeline .date:last-of-type {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    border: none;
-}
-
-.timeline .date::before,
-.timeline .date::after {
-    position: absolute;
-    display: block;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.timeline .date::before {
-    content: attr(data-date);
-    left: -21rem;
-    text-align: right;
-    min-width: 12rem;
-    font-size: 1.5rem;
-}
-
-.timeline .date::after {
-    content: '';
-    box-shadow: 0 0 0 4px #ffe838;
-    border-radius: 100%;
-    left:  -7.6rem;
-    height: 0.75rem;
-    width: 0.75rem;
-    background-color: #ffe838;
-}
-/* End Timeline */
-
-/* Contact */
-.contact {
-    background-color: #272727;
-}
-
-form {
-    width: 70%;
-    margin: 0 auto;
-}
-
-form label {
-    font-size: 1.5rem;
-}
-
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: none;
-    outline-color: #5da3ff;
-}
-
-textarea {
-    resize: none;
-}
-
-input[type="submit"] {
-    width: initial;
-    background-color: #555;
-    color: #eee;
-    padding: 1rem 2rem;
-    border-radius: .8rem;
-    cursor: pointer;
-    transition: background-color 300ms;
-}
-
-input[type="submit"]:hover {
-    color: #fff;
-    background-color: #5da3ff;
-}
-/* End Contact */
+/* End Blog */
 
 /* Footer */
 .copyright {
@@ -516,35 +334,6 @@ input[type="submit"]:hover {
     .nav-link {
         font-size: 4.5rem;
     }
-
-    .about-heading h1{
-        font-size: 8rem;
-    }
-
-    .about-heading h6 {
-        font-size: 3rem;
-    }
-
-    .about-details .nav-list {
-        flex-direction: initial;
-    }
-
-    .about-details li {
-        margin: 0 2rem;
-    }
-
-    .timeline ul {
-        margin: 0 0 0 auto;
-    }
-
-    .timeline .date::before {
-        left: -20rem;
-    }
-
-    .timeline .date::after {
-        left: -5.6rem;
-    }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -563,40 +352,6 @@ input[type="submit"]:hover {
 
     .nav-link {
         font-size: 3.5rem;
-    }
-
-    .about .container {
-        flex-direction: column;
-    }
-
-    .profile-img {
-        margin: 0 0 7rem 0;
-    }
-
-    .project-item {
-        flex-direction: column;
-    }
-
-    .project-img {
-        margin: 0 0 2rem 0;
-        order: 1;
-    }
-
-    .project-description {
-        margin: 0;
-        order: 2;
-    }
-
-    .timeline p {
-        font-size: 1.6rem;
-    }
-
-    .timeline .date::before {
-        font-size: 1.3rem;
-    }
-
-    form {
-        width: 100%;
     }
 
     .up {
