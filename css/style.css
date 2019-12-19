@@ -389,7 +389,7 @@ li {
 
 .timeline-item {
 	width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
 }
 
 .timeline-item::after {
@@ -408,6 +408,8 @@ li {
 
 .timeline-item:nth-child(even) .timeline-content .date {
     right: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
     left: 0;
 }
 
@@ -417,7 +419,7 @@ li {
     border-style: solid;
     width: 0;
     height: 0;
-    top: 30px;
+    top: 32px;
     left: -15px;
     border-width: 10px 15px 10px 0;
     border-color: transparent #1f1f1f transparent transparent;
@@ -439,7 +441,7 @@ li {
     border-style: solid;
     width: 0;
     height: 0;
-    top: 30px;
+    top: 32px;
     right: -15px;
     border-width: 10px 0 10px 15px;
     border-color: transparent transparent transparent #1f1f1f;
@@ -448,11 +450,11 @@ li {
 .timeline-img {
 	width: 20px;
 	height: 20px;
-	background: rgb(73, 73, 73);
+	background: rgb(160, 160, 160);
 	border-radius: 50%;
 	position: absolute;
 	left: 50.375%;
-	margin-top: 30px;
+	margin-top: 32px;
 	margin-left: -15px;
 }
 
@@ -466,11 +468,12 @@ li {
 	margin-top: 10px;
 	display: inline-block;
 	border-radius: 10px;
-	box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .6);
+    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .6);
+    transition: background-color 300ms;
 }
 
 .timeline a:hover {
-    background-color: #313131;
+    background-color: #454545;
 }
 
 a:hover, a:active, a:focus {
@@ -523,7 +526,8 @@ blockquote {
 	padding: 10px;
 	position: absolute;
 	top: 0;
-	right: 0;
+    right: 0;
+    border-top-right-radius: 10px;
 }
 /* End Timeline */
 
@@ -555,7 +559,7 @@ textarea {
 
 input[type="submit"] {
     width: initial;
-    background-color: #555;
+    background-color: #313131;
     color: #eee;
     padding: 1rem 2rem;
     border-radius: .8rem;
@@ -565,7 +569,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     color: #fff;
-    background-color: #313131;
+    background-color: #555;
 }
 /* End Contact */
 
