@@ -15,7 +15,12 @@
         "Email:\n".$emailFrom."\n".
         "$message.\n";
 
-        mail($emailTo, $emailSubject, $emailBody, $headers);
+        if (mail($emailTo, $emailSubject, $emailBody, $headers)) {
+            echo '<p>Your message has been sent!</p>';
+        }
+        else {
+            echo '<p>Your message could not be sent. Please try again later</p>';
+        }
         header("Location: index.html?mailsend");
     }
 ?>
