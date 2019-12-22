@@ -24,8 +24,6 @@ See the website live [here](https://mazjap.github.io/)!
 
 ## Authors
 
-Contributors names and contact info
-
 [Jordan Christensen](http://mazjap.github.com/)
 
 ## Version History
