@@ -102,7 +102,7 @@ header {
     width: 100%;
     height: 18vh;
     position: fixed;
-    top: -100vh;
+    top: -150vh;
     z-index: 50;
     background-color: #1f1f1f;
     border-bottom-right-radius: 100%;
@@ -366,15 +366,11 @@ li {
 .project-description .view-details:hover {
     color: #2f67cd;
 }
-
-/* .all-projects {
-    color: #2f67cd;
-} */
 /* End Projects */
 
 /* Timeline */
 .timeline {
-	position: relative;
+    position: relative;
 }
 
 .timeline::before {
@@ -385,6 +381,7 @@ li {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    padding-bottom: 35px;
 }
 
 .timeline-item {
@@ -432,7 +429,7 @@ li {
 	padding: 10px 30px;
 	border-radius: 10px;
 	background: #1f1f1f;
-	box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
 }
 
 .timeline-content::after {
@@ -579,7 +576,8 @@ input[type="submit"]:hover {
     align-items: center;
     justify-content: center;
     background-color: #272727;
-    border-radius: 50px;
+    border-radius: 20px;
+    top: -10rem;
 }
 
 .blog-description {
@@ -628,7 +626,7 @@ input[type="submit"]:hover {
     width: 5rem;
     height: 5rem;
     background-color: #eee;
-    top: -3.5rem;
+    top: -7.5rem;
     right: 5rem;
     border-radius: 100%;
     display: flex;
@@ -674,7 +672,7 @@ input[type="submit"]:hover {
     }
 
     .top-nav {
-        height: 100vh;
+        height: 120vh;
     }
 
     .nav-list {
@@ -703,6 +701,12 @@ input[type="submit"]:hover {
 
     .about-details li {
         margin: 0 2rem;
+    }
+
+    .timeline::before {
+        left: 50%;
+        transform: translateX(-50%);
+        padding-bottom: 35px;
     }
 
     .timeline ul {
