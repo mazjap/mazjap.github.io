@@ -24,7 +24,7 @@ See the website live [here](https://mazjap.github.io/)!
 
 ## Authors
 
-[Jordan Christensen](http://mazjap.github.com/)
+[Jordan Christensen](https://mazjap.github.io/)
 
 ## Version History
 
