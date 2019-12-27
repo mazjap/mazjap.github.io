@@ -19,20 +19,23 @@ See the website live [here](https://mazjap.github.io/)!
 
 * Work on blog
 * Unify color scheme
-* Change font
+* ~~Change font~~
 * Get PHP form working with github
 
 ## Authors
 
-[Jordan Christensen](http://mazjap.github.com/)
+[Jordan Christensen](https://mazjap.github.io/)
 
 ## Version History
 
-* 1.1
-    * Various bug fixes and optimizations
-    * See [commit changes](https://github.com/mazjap/mazjap.github.io/commits/master) for the list of changes
-* 1.0
-    * Initial Release
+* 1.1.1
+   * Update font
+   * Add google analytics
+* 1.1.0
+   * Various bug fixes and optimizations
+   * See [commit changes](https://github.com/mazjap/mazjap.github.io/commits/master) for the list of changes
+* 1.0.0
+   * Initial Release
 
 ## License
 
