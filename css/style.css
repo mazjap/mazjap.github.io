@@ -146,11 +146,11 @@ li {
 .top-nav.open {
     top: 0;
     border-radius: initial;
-    transition: 0.5s;
+    transition: 500ms;
 }
 
 .top-nav.close {
-    transition: 0.5s;
+    transition: 500ms;
 }
 /* End Top Navigation Bar */
 
@@ -158,24 +158,23 @@ li {
 .menu-toggle {
     display: block;
     position: fixed;
-    top: 6.5rem;
-    right: 5rem;
+    top: 5.75rem;
+    right: 3rem;
     width: 5rem;
     cursor: pointer;
     z-index: 1500;
-    transition: transform 650ms ease-out;
     -webkit-user-select: none;
     user-select: none;
 }
 
 .menu-toggle a {
     text-decoration: none;
-    color: #232323;
-    transition: color 0.3s ease;
+    color: #1f1f1f;
+    transition: color 0.5s ease;
 }
 
 .menu-toggle a:hover {
-    color: #232323;
+    color: #454545;
 }
 
 
@@ -198,17 +197,18 @@ li {
     height: 5px;
     margin-bottom: 5px;
     position: relative;
-    background: #232323;
+    background: #1f1f1f;
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
+    box-shadow: 1.5px 1.5px 1px 1px rgba(0, 0, 0, .3);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                opacity 0.3s ease;
 }
 
 .menu-toggle span:first-child {
     transform-origin: 0% 0%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .menu-toggle span:nth-last-child(2) {
@@ -217,8 +217,9 @@ li {
 
  .menu-toggle input:checked ~ span {
     opacity: 1;
-    transform: rotate(45deg) translate(-23px, -21px);
     background: #cdcdcd;
+    transform: rotate(45deg) translate(-12px, -18px);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
  .menu-toggle input:checked ~ span:nth-last-child(3) {
@@ -227,7 +228,7 @@ li {
 }
 
  .menu-toggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
+    transform: rotate(-45deg) translate(-2px, 12px);
 }
 /* End Nav Toggler */
 
@@ -332,6 +333,9 @@ li {
 .social-media i {
     font-size: 5rem;
     transition: color 300ms;
+    border-radius: 10%;
+    height: 40px;
+    box-shadow: 3px 7px 3px 5px rgba(0, 0, 0, .2);
 }
 
 .fa-github-square:hover {
@@ -352,7 +356,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 
 .project-item:last-child {
@@ -407,8 +411,8 @@ li {
     height: 95%;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    padding-bottom: 35px;
+    transform: translateX(-55%) translateY(-20px);
+    padding-bottom: 50px;
 }
 
 .timeline-item {
@@ -443,10 +447,10 @@ li {
     border-style: solid;
     width: 0;
     height: 0;
-    top: 32px;
+    top: 10px;
     left: -15px;
     border-width: 10px 15px 10px 0;
-    border-color: transparent #1f1f1f transparent transparent;
+    border-color: transparent #454545 transparent transparent;
 }
 
 
@@ -455,8 +459,10 @@ li {
 	width: 45%;
 	padding: 10px 30px;
 	border-radius: 10px;
-	background: #1f1f1f;
-    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+    /* background: #1f1f1f; */
+    border-width: 100px;
+    border-color: #fff;
+    box-shadow: 20px 20px 25px 5px rgba(0, 0, 0, .2);
 }
 
 .timeline-content::after {
@@ -465,10 +471,10 @@ li {
     border-style: solid;
     width: 0;
     height: 0;
-    top: 32px;
+    top: 10px;
     right: -15px;
     border-width: 10px 0 10px 15px;
-    border-color: transparent transparent transparent #1f1f1f;
+    border-color: transparent transparent transparent #454545;
 }
 
 .timeline-img {
@@ -478,7 +484,7 @@ li {
 	border-radius: 50%;
 	position: absolute;
 	left: 50.375%;
-	margin-top: 32px;
+	margin-top: 10px;
 	margin-left: -15px;
 }
 
@@ -492,7 +498,7 @@ li {
 	margin-top: 10px;
 	display: inline-block;
 	border-radius: 10px;
-    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .6);
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, .4);
     transition: background-color 300ms;
 }
 
@@ -588,12 +594,13 @@ input[type="submit"] {
     padding: 1rem 2rem;
     border-radius: .8rem;
     cursor: pointer;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, .4);
     transition: background-color 300ms;
 }
 
 input[type="submit"]:hover {
     color: #fff;
-    background-color: #555;
+    background-color: #454545;
 }
 /* End Contact */
 
@@ -809,7 +816,7 @@ input[type="submit"]:hover {
         border-radius: 50%;
         position: absolute;
         left: 50.375%;
-        margin-top: 37px;
+        margin-top: 13px;
         margin-left: -6px;
     }
 
