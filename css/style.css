@@ -131,14 +131,14 @@ li {
 
 .nav-link:hover,
 .nav-link:focus {
-    background: linear-gradient(to top, #22333B, #F2F4F3);
+    background: linear-gradient(to top, #1f1f1f, #F2F4F3);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .nav-link-border {
-    font-family: 'Poppind', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     padding: 1;
 }
@@ -159,12 +159,9 @@ li {
     display: block;
     position: fixed;
     top: 5.75rem;
-    right: 3rem;
-    width: 5rem;
+    right: 4rem;
     cursor: pointer;
-    z-index: 1500;
-    -webkit-user-select: none;
-    user-select: none;
+    z-index: 51;
 }
 
 .menu-toggle a {
@@ -177,12 +174,9 @@ li {
     color: #454545;
 }
 
-
 .menu-toggle input {
     display: fixed;
     position: absolute;
-    top: -7px;
-    left: -5px;
     width: 40px;
     height: 32px;
     cursor: pointer;
@@ -246,7 +240,7 @@ li {
 .landing-text h1 {
     font-size: 11rem;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to top, #22333B, #F2F4F3);
+    background: linear-gradient(to top, #1f1f1f, #F2F4F3);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -255,32 +249,6 @@ li {
 }
 
 .landing-text h6 {
-    font-size: 2rem;
-    font-weight: 300;
-}
-
-.landing-text-blog {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-    z-index: 1;
-}
-
-.landing-text-blog h1 {
-    font-size: 8rem;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to top, #22333B, #F2F4F3);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 1rem;
-    user-select: none;
-}
-
-.landing-text-blog h6 {
     font-size: 2rem;
     font-weight: 300;
 }
@@ -335,7 +303,7 @@ li {
     transition: color 300ms;
     border-radius: 10%;
     height: 40px;
-    box-shadow: 3px 7px 3px 5px rgba(0, 0, 0, .2);
+    box-shadow: 3px 9px 3px 2px rgba(0, 0, 0, .2);
 }
 
 .fa-github-square:hover {
