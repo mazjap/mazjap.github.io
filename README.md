@@ -18,8 +18,9 @@ See the website live [here](https://mazjap.github.io/)!
 ## TODO
 - [ ] Work on blog
 - [ ] Unify and/or update color scheme
+- [ ] Work on 'All Projects' page
 - [x] Change font
-- [x] Get PHP form working with github (Stopped using PHP form because Github has issues with PHP email requests. Using [FormSpree](https://formspree.io/) now)
+- [x] Get PHP form working with github (Github has issues with PHP email requests. Using [FormSpree](https://formspree.io/) now)
 
 ## Authors
 
