@@ -377,6 +377,22 @@ li {
 .project-description .view-details:hover {
     color: #2f67cd;
 }
+
+.all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-projects .view-projects {
+    font-size: 1.5rem;
+    color: #3883ff;
+    transition: color 650ms;
+}
+
+.all-projects .view-projects:hover {
+    color: #2f67cd;
+}
 /* End Projects */
 
 /* Timeline */
