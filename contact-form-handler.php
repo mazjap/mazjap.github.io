@@ -1,5 +1,5 @@
 <?php
-
+//  Not currently used, but I left it here to use in a future version
     if (isset($_POST['submit'])) {
         $name = $_POST['name'];
         $emailFrom = $_POST['email'];
