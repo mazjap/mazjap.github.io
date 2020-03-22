@@ -16,7 +16,12 @@ body {
     height: 100%;
     transition: background-color 1s ease;
     background-color: #cacaca;
+    /* -ms-overflow-style: none; */
 }
+
+/* body::-webkit-scrollbar {
+    display: none;
+} */
 
 section {
     padding: 6rem 0 20rem 0;
@@ -440,16 +445,26 @@ li {
     margin: 1rem, 0.5rem;
 }
 
+.project-description h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem, 0.5rem;
+}
+
 .project-description h6 {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 300;
-    opacity: 0.3;
+    opacity: 0.4;
+}
+
+.project-description p {
+    margin-top: 1.5rem;
 }
 
 .project-description .view-details {
     display: inline-block;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     font-size: 1.5rem;
     text-transform: uppercase;
     color: #46688a;
@@ -487,11 +502,12 @@ li {
     content: '';
     background: #1f1f1f;
     width: 5px;
-    height: 95%;
+    height: 96.5%;
     position: absolute;
     left: 50%;
     transform: translateX(-55%) translateY(-20px);
     padding-bottom: 50px;
+    border-radius: 20px;
 }
 
 .timeline-item {
@@ -526,8 +542,8 @@ li {
     border-style: solid;
     width: 0;
     height: 0;
-    top: 10px;
-    left: -15px;
+    top: 8px;
+    left: -14px;
     border-width: 10px 15px 10px 0;
     border-color: transparent #46688a transparent transparent;
 }
@@ -547,8 +563,8 @@ li {
     border-style: solid;
     width: 0;
     height: 0;
-    top: 10px;
-    right: -15px;
+    top: 8px;
+    right: -14px;
     border-width: 10px 0 10px 15px;
     border-color: transparent transparent transparent #46688a;
 }
@@ -560,7 +576,7 @@ li {
 	border-radius: 50%;
 	position: absolute;
 	left: 50.375%;
-	margin-top: 10px;
+	margin-top: 8px;
 	margin-left: -15px;
 }
 
@@ -605,7 +621,6 @@ a:hover, a:active, a:focus {
 }
 
 .timeline-img-header {
-
 	height: 200px;
 	position: relative;
 	margin-bottom: 20px;
