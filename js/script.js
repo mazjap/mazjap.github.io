@@ -52,47 +52,76 @@ $(window).scroll(function() {
     
   }).scroll();
 
-var project1_slide_index = 1; displaySlides(project1_slide_index, 1)
-var project2_slide_index = 1; displaySlides(project2_slide_index, 2)
-var project3_slide_index = 1; displaySlides(project3_slide_index, 3)
+// var project1_slide_index = 1; displaySlides(project1_slide_index, 1)
+// var project2_slide_index = 1; displaySlides(project2_slide_index, 2)
+// var project3_slide_index = 1; displaySlides(project3_slide_index, 3)
+// var project4_slide_index = 1; displaySlides(project4_slide_index, 4)
 
-function nextSlide(val, num) {
-    if (num == 1) {
-        displaySlides(project1_slide_index += val, num)
-    } else if (num == 2) {
-        displaySlides(project2_slide_index += val, num)
-    } else if (num == 3) {
-        displaySlides(project3_slide_index += val, num)
-    }
+// function nextSlide(val, num) {
+//     if (num == 1) {
+//         displaySlides(project1_slide_index += val, num)
+//     } else if (num == 2) {
+//         displaySlides(project2_slide_index += val, num)
+//     } else if (num == 3) {
+//         displaySlides(project3_slide_index += val, num)
+//     } else if (num == 4) {
+//         displaySlides(project4_slide_index += val, num)
+//     }
+// }
+
+// function currentSlide(val, num) {
+//     if (num == 1) {
+//         displaySlides(project1_slide_index = val, num)
+//     } else if (num == 2) {
+//         displaySlides(project2_slide_index = val, num)
+//     } else if (num == 3) {
+//         displaySlides(project3_slide_index = val, num)
+//     } else if (num == 3) {
+//         displaySlides(project4_slide_index = val, num)
+//     }
+// }
+
+// function displaySlides(num, projectNum) {
+//     var i
+//     var slides = document.getElementsByClassName("project".concat(projectNum, "_showSlide"))
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none"
+//     }
+//     if (projectNum == 1) {
+//         if (num > slides.length) { project1_slide_index = 1 }
+//         if (num < 1) { project1_slide_index = slides.length }
+//         slides[project1_slide_index - 1].style.display = "block"
+//     } else if (projectNum == 2) {
+//         if (num > slides.length) { project2_slide_index = 1 }
+//         if (num < 1) { project2_slide_index = slides.length }
+//         slides[project2_slide_index - 1].style.display = "block"
+//     } else if (projectNum == 3) {
+//         if (num > slides.length) { project3_slide_index = 1 }
+//         if (num < 1) { project3_slide_index = slides.length }
+//         slides[project3_slide_index - 1].style.display = "block"
+//     }
+// }
+
+var project_slide_indexes = [1, 1, 1, 1]
+
+for (var i = 1; i <= project_slide_indexes.length; i++) {
+    displaySlides(project_slide_indexes[i - 1], i)
 }
 
-function currentSlide(val, num) {
-    if (num == 1) {
-        displaySlides(project1_slide_index = val, num)
-    } else if (num == 2) {
-        displaySlides(project2_slide_index = val, num)
-    } else if (num == 3) {
-        displaySlides(project3_slide_index = val, num)
-    }
+function nextSlide(projectNum) {
+    displaySlides(project_slide_indexes[projectNum - 1] += 1, projectNum)
+}
+
+function prevSlide(projectNum) {
+    displaySlides(project_slide_indexes[projectNum - 1] -= 1, projectNum)
 }
 
 function displaySlides(num, projectNum) {
-    var i
     var slides = document.getElementsByClassName("project".concat(projectNum, "_showSlide"))
-    for (i = 0; i < slides.length; i++) {
+    for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"
     }
-    if (projectNum == 1) {
-        if (num > slides.length) { project1_slide_index = 1 }
-        if (num < 1) { project1_slide_index = slides.length }
-        slides[project1_slide_index - 1].style.display = "block"
-    } else if (projectNum == 2) {
-        if (num > slides.length) { project2_slide_index = 1 }
-        if (num < 1) { project2_slide_index = slides.length }
-        slides[project2_slide_index - 1].style.display = "block"
-    } else if (projectNum == 3) {
-        if (num > slides.length) { project3_slide_index = 1 }
-        if (num < 1) { project3_slide_index = slides.length }
-        slides[project3_slide_index - 1].style.display = "block"
-    }
+    if (num > slides.length) { project_slide_indexes[projectNum - 1] = 1 }
+    if (num < 1) { project_slide_indexes[projectNum - 1] = slides.length }
+    slides[project_slide_indexes[projectNum - 1] - 1].style.display = "block"
 }

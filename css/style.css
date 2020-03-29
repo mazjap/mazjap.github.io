@@ -750,6 +750,7 @@ input[type="submit"]:hover {
     width: 100%;
     text-align: center;
     background-color: #1f1f1f;
+    color: #aaa;
     padding: 1rem 0;
     position: relative;
 }
