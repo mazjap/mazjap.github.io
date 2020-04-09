@@ -1,8 +1,6 @@
 # Jordan Christensen Portfolio Website
 
-As a 13 year old kid, my dream was to make my own website. Not because I had anything to sell or something to say, I just wanted one for the challenge. I tried using a website building service, but I wasn't satisfied; it had limited customization and watermarks everywhere. This led to 13 year old me learning the very basics of HTML and CSS. While it wasn’t a difficult task, I was able to create my first website and in turn a project that I was satisfied and proud of.
-
-Years later, I may not be creating websites, but I still have the same passion that I did as a 13 year old kid. I made this portfolio not because I have anything to sell or something to say, but because I accept the challenge.
+As a 13 year old, I dreamed of creating my own website. Not because I had something to sell or say, I just wanted one for the challenge. I tried using a website building service, but it's limited customization and watermarks drove me to learn the basics of HTML and CSS. While it wasn’t the most difficult task, I was able to create my first website and in turn a project that I was satisfied and proud of. Years later, I may not be creating websites, but I still have the same passion that I did as a 13 year old kid.
 
 ## Getting Started
 
@@ -17,8 +15,8 @@ See the website live [here](https://mazjap.github.io/)!
 
 ## TODO
 - [ ] Work on blog
-- [ ] Unify and/or update color scheme
-- [ ] Work on 'All Projects' page
+- [x] Unify and/or update color scheme
+- ~~[ ] Work on 'All Projects' page~~
 - [x] Change font
 - [x] Get PHP form working with github (Github has issues with PHP email requests. Using [FormSpree](https://formspree.io/) now)
 
@@ -29,19 +27,27 @@ See the website live [here](https://mazjap.github.io/)!
 ## Version History
 To see all changes, [click here](https://github.com/mazjap/mazjap.github.io/commits/master) to see each commit, along with its code and message
 
-* 1.1.1
-   * Update font
-   * Add google analytics
-   * Implement FormSpree
-   * Remove interactive background
-* 1.1.0
-   * Make website prettier
-   * Implement blog
-   * Add email verification
-   * Add interactive background
-   * Etc.
-* 1.0.0
-   * Initial Release
+### 1.2.0
+   - Update project design
+      - Add tech stack
+      - Add image carousel
+   - Rework colors
+   - Add background fade when scrolling
+   - Implment new nav toggler
+   - And more
+### 1.1.1
+   - Update font
+   - Add google analytics
+   - Implement FormSpree
+   - Remove interactive background
+### 1.1.0
+   - Make website prettier
+   - Implement blog
+   - Add email verification
+   - Add interactive background
+   - And more
+### 1.0.0
+   - Initial Release
 
 ## License
 
