@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     $('nav a[href*="#"]').on('click', function() {
         $('html, body').animate({
-           scrollTop: $($(this).attr('href')).offset().top - 50
+           scrollTop: $($(this).attr('href')).offset().top
         }, 2000)
     })
 
@@ -40,17 +40,15 @@ $(window).scroll(function() {
     var scroll = $window.scrollTop() + ($window.height() / 3);
    
     $panel.each(function () {
-      var $this = $(this);
-      if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-        $body.removeClass(function (index, css) {
-          return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-        });
-
-        $body.addClass('color-' + $(this).data('color'));
-      }
-    });    
-    
-  }).scroll();
+        var $this = $(this);
+        if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+            $body.removeClass(function (index, css) {
+                return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+            });
+            $body.addClass('color-' + $(this).data('color'));
+        }
+    });
+}).scroll();
 
 var project_slide_indexes = [1, 1, 1, 1, 1]
 

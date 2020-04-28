@@ -46,11 +46,17 @@
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li>
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li>
-                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="#projects" class="nav-link">Projects</a>
                 </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <!-- <li>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li> -->
                 <li>
                     <p class="nav-link-border unselectable">|</p>
                 </li>
@@ -62,13 +68,17 @@
                 </li>
             </ul>
         </nav>
-        <div class="landing-text">
-            <h1>print("Hello, World!")</h1>
+        <div class="panel" data-color="default">
+            <div class="landing-text">
+                <h1>print("Hello, World!")</h1>
+            </div>
+            <div class="scroll-text">
+                <p>Scroll down for more</p>
+            </div>
         </div>
     </header>
-    
     <section class="about" id="about">
-        <div class="panel" data-color="default">
+        <div class="panel" data-color="extra-light">
             <div class="container">
                 <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
                     <img src="src/Profile.png" alt="">
@@ -115,7 +125,7 @@
     </section>
     
     <section class="projects" id="projects">
-        <div class="panel" data-color="dark">
+        <div class="panel" data-color="light">
             <div class="container">
                 <div class="section-heading">
                     <h1>Recent Projects</h1>
@@ -157,7 +167,8 @@
                     </div>
                     <div class="project-description">
                         <h2>Technologies: GraphQL, Auth0, CoreData, UIKit, Notification Design Pattern</h2>
-                        <p>Worked on a cross-functional team of 12 developers to build an application that connects you with the events happening within your neighborhood. It possesses an intuitive search feature and the ability to add any event to your calendar or get directions in maps.</p>
+                        <p>Worked on a cross-functional team of 12 developers to build an application that connects you with the events happening within a user's neighborhood. It possesses an intuitive search and filter feature and the ability to add any event to your calendar or get directions in maps.</p>
+                        <p>On this project, I worked on the GraphQL implementation, maps, calendar, custom search and filtering, etc.</p>
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/Lambda-School-Labs/community-calendar-ios" class="view-details">View Project on Github</a>
                     </div>
                 </div>
@@ -203,7 +214,8 @@
                     </div>
                     <div class="project-description">
                         <h2>Technologies: CoreData, CloudKit, Local Notifications, JTAppleCalendar</h2>
-                        <p>Habit Tracker was built by two developers over the course of one week. It is an app that reminds you to complete tasks with enough repetition to become a habit. Sends daily notifications and uses a calendar and pie chart to track progress.</p>
+                        <p>Habit Tracker was built by myself and one other developer over the course of one week. It is an app that reminds users to complete tasks with enough repetition to become a habit. Sends daily notifications and uses a calendar and pie chart to track progress.</p>
+                        <p>On this project, I worked on the CloudKit implementation, as well as Local Notifications, the JTAppleCalendar, and a custom navigation bar.</p>
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/HabitTracker-iOS" class="view-details">View Project on Github</a>
                     </div>
                 </div>
@@ -233,7 +245,8 @@
                     </div>
                     <div class="project-description">
                         <h2>Technologies: CoreData, MapKit, Firebase, Auth0</h2>
-                        <p>Quickly and easily find and track your favorite food trucks so that you never miss them again, built using Google's Firebase as a backend.</p>
+                        <p>An app built to quickly and easily find and track user's favorite food trucks so that they never miss them again, built using Google's Firebase as a backend.</p>
+                        <p>On this project, I implemented on the CoreData objects, as well as rest network calls to fetch data.</p>
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/Build-Week-FoodTruck-TrackR/IOS/tree/fixpods" class="view-details">View Project on Github</a>
                     </div>
                 </div>
@@ -269,7 +282,7 @@
                     </div>
                     <div class="project-description">
                         <h2>Technologies: UserDefaults, URLSession, Objective-C and Swift</h2>
-                        <p>A pokedex to catalog and learn more about all of the pokemon you find. This project was made to practice mixing Objective-C and Swift, while incorporating something that I have enjoyed for years, Pokémon.</p>
+                        <p>A pokédex to catalog and learn more about all of the pokemon users find. This solo project was made to practice mixing Objective-C and Swift, while incorporating something that I have enjoyed for years, Pokémon.</p>
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/Pokedex" class="view-details">View Project on Github</a>
                     </div>
                 </div>
@@ -285,8 +298,8 @@
                             </div>
                         </div>
                         <!-- Navigation arrows -->
-                        <a class="left" onclick="prevSlide(5)">❮</a>
-                        <a class="right" onclick="nextSlide(5)">❯</a>
+                        <!-- <a class="left" onclick="prevSlide(5)">❮</a>
+                        <a class="right" onclick="nextSlide(5)">❯</a> -->
                     </div>
                     <div class="project-description">
                         <h2>Technologies: MPMusicPlayerController, SwiftUI</h2>
@@ -341,7 +354,7 @@
     </section>
     
     <section class="contact" id="contact" data-aos="fade-in" data-aos-delay="300">
-        <div class="panel" data-color="light">
+        <div class="panel" data-color="dark">
             <div class="container">
                 <div class="section-heading">
                     <h1>Contact Me</h1>

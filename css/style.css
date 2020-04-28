@@ -23,7 +23,7 @@ body {
 } */
 
 section {
-    padding: 6rem 0 20rem 0;
+    padding: 6rem 0 10rem 0;
 }
 
 a {
@@ -234,10 +234,14 @@ li {
 }
 
 .color-default {
+    background-color: #ececec;
+}
+
+.color-extra-light {
     background-color: #cacaca;
 }
 
-.color-dark {
+.color-light {
     background-color: #a8a8a8;
 }
 
@@ -245,7 +249,7 @@ li {
     background-color: #868686;
 }
 
-.color-light {
+.color-dark {
     background-color: #646464;
 }
 /* End Background Fade */
@@ -296,10 +300,23 @@ li {
     font-size: 2rem;
     font-weight: 300;
 }
+
+.scroll-text {
+    top: 95%;
+    height: 5%;
+}
+
+.scroll-text p {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
 /* End Landing Info */
 
 /* About */
-
 .about .container {
     display: flex;
     align-items: center;
