@@ -18,9 +18,9 @@ body {
     background-color: #cacaca;
 }
 
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
-} */
+}
 
 section {
     padding: 6rem 0 10rem 0;
