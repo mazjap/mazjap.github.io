@@ -33,6 +33,12 @@ $(document).ready(function() {
 })
 
 $(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+        $('.scroll-text').fadeOut();
+    } else {
+        $('.scroll-text').fadeIn();
+    }
+
     var $window = $(window),
         $body = $('body'),
         $panel = $('.panel');

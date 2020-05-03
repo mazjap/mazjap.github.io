@@ -485,6 +485,10 @@ li {
     transition: color 650ms;
 }
 
+.appstore {
+    float: right;
+}
+
 .project-description .view-details:hover {
     color: #57799b;
 }
