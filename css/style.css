@@ -679,6 +679,7 @@ textarea {
 
 textarea {
     resize: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 input[type="submit"] {
@@ -697,6 +698,56 @@ input[type="submit"]:hover {
     background-color: #57799b;
 }
 /* End Contact */
+
+/* Error */
+.error error-title {
+    font-size: 10px;
+}
+
+.error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    z-index: 1;
+}
+
+.error-title {
+    padding-bottom: 3rem;
+}
+
+.error h1 {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top, #3f3f3f, #a1a1a1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.error h2 {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.error p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    padding-bottom: 1rem;
+}
+
+.error a {
+    color: #fff;
+}
+
+.error a:hover {
+    color: #08d
+}
+/* End Error */
 
 /* Blog */
 .blog body {
