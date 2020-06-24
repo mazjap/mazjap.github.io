@@ -14,11 +14,9 @@ See the website live [here](https://mazjap.github.io/)!
 * PHP
 
 ## TODO
-- [ ] Work on blog
-- [x] Unify and/or update color scheme
-- [ ] ~~Work on 'All Projects' page~~
-- [x] Change font
-- [x] Get PHP form working with github (Github has issues with PHP email requests. Using [FormSpree](https://formspree.io/) now)
+- [ ] Create Blog section and add posts
+- [ ] Create All Projects section to showcase Python, Java, and older projects
+- [ ] Recreate project design
 
 ## Authors
 
@@ -51,7 +49,7 @@ To see all changes, [click here](https://github.com/mazjap/mazjap.github.io/comm
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE)
+This project is licensed under the [MIT License](LICENSE). Feel free to use this code for your website.
 
 ## Acknowledgments
 
