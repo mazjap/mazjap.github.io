@@ -1,0 +1,310 @@
+@use "base";
+
+$navColor: #EE9933;
+$navLinkHoverBackgroundColor: #cc6600;
+$navLinkHoverColor: white;
+$navHeight: 100px;
+
+$redColor: #993B2B;
+
+
+@mixin sectionFlex() {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin sizedImg($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+}
+
+.container {
+    width: 100%;
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 base.$sectionPaddingHorizontal;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: $navColor;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        height: $navHeight;
+
+        .logo {
+            flex-grow: 1;
+        }
+
+        a:not(.logo) {
+            padding: 12px;
+            font-size: 1.3vw;
+            border-radius: 20px;
+        }
+
+        a:hover:not(.img-anchor) {
+            background-color: $navLinkHoverBackgroundColor;
+            color: $navLinkHoverColor;
+        }
+    }
+
+    .landing {
+        position: relative;
+        padding-top: 5px;
+
+        img {
+            @include sizedImg(100%, 560px);
+        }
+
+        h1 {
+            position: absolute;
+            padding: 16px;
+            bottom: 15%;
+            right: 50%;
+            transform: translate(50%, 0);
+            background: #fff;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+    }
+
+    // Home Page
+
+    .categories {
+        @include sectionFlex();
+
+        .category_item {
+            text-align: center;
+            display: inline-block;
+            width: 30%;
+            height: 300px;
+
+            p {
+                display: block;
+                padding-top: 10px;
+                font-size: large;
+                font-weight: 600;
+            }
+
+            img {
+                @include sizedImg(100%, 80%);
+            }
+        }
+    }
+
+    .recipes {
+        @include sectionFlex();
+
+        .recipe_item {
+            text-align: center;
+            width: 20%;
+
+            img {
+                @include sizedImg(100%, 200px);
+            }
+
+            p {
+                font-size: 1em;
+                font-weight: 600;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                text-align: center;
+                background-color: #fff;
+            }
+        }
+    }
+
+    .places {
+        @include sectionFlex();
+
+        .place {
+            width: 25%;
+
+            img {
+                @include sizedImg(100%, 228px);
+            }
+
+            p {
+                font-size: medium;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+    }
+
+    .footer {
+        @include sectionFlex();
+        background-color: $navColor;
+        height: $navHeight;
+        align-items: center;
+        padding: 0 base.$sectionPaddingHorizontal;;
+
+        ul li {
+            display: inline;
+            list-style-type: none;
+            font-size: 1vw;
+            padding-left: 10px;
+        }
+
+        a:hover {
+            color: #ccc;
+        }
+    }
+
+    // Recipe Page
+
+    .recipe_overview {
+        padding-left: base.$sectionPaddingHorizontal;
+        padding-right: base.$sectionPaddingHorizontal;
+        padding-top: 20px;
+        height: 200px;
+
+        h3 {
+            font-size: 2em;
+
+        }
+
+        ul {
+            height: 100px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            li {
+                margin-top: 12px;
+
+                h4 {
+                    display: inline;
+                    font-size: 1.15em;
+                }
+
+                p {
+                    display: inline;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    .recipe_information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .rating {
+            margin-bottom: 20px;
+
+            span {
+                display: inline;
+                color: $redColor;
+                font-size: 1.4em;
+                text-shadow: 0 0 2px #000000;
+            }
+
+            p {
+                padding: 10px;
+                display: inline;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+
+        .btn-container {
+            display: flex;
+            height: 40px;
+
+            button {
+                border: 1px solid black;
+                margin: 10px;
+                cursor: pointer;
+            }
+
+            .save {
+                font-size: 1em;
+                height: 100%;
+                padding: 10px 16px 0 16px;
+                border-radius: 20px;
+            }
+
+            .print {
+                background-image: url(../src/printer-icon.png);
+                background-repeat: no-repeat;
+                background-size: 60%;
+                background-position-x: 50%;
+                background-position-y: 50%;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                background-color: white;
+            }
+        }
+    }
+
+    .quote {
+        margin: 0 10%;
+
+        p {
+            color: #555;
+            font-weight: bolder;
+            padding: 0;
+            line-height: normal;
+        }
+    }
+
+    .recipe-content {
+        display: flex;
+        justify-content: space-around;
+
+        h3 {
+            font-size: 2.5em;
+            padding-bottom: 20px;
+        }
+
+        * > li {
+            padding-bottom: 10px;
+            font-size: large;
+        }
+
+        .ingredients {
+            ul {
+                padding-left: 20px;
+            }
+
+            h4 {
+                font-size: 1.25em;
+                font-weight: bolder;
+                padding: 20px 0 10px 0;
+            }
+        }
+
+        .directions {
+            width: 50%; 
+
+            ol, b {
+                padding-left: 25px;
+            }
+        }
+    }
+
+    .video-section {
+        h3 {
+            text-align: center;
+            font-size: 2em;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 50vw;
+        }
+    }
+}

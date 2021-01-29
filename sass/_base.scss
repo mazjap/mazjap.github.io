@@ -1,0 +1,62 @@
+
+$sectionPaddingVertical: 3%;
+$sectionPaddingHorizontal: 10%;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: color, background-color 0.25s;
+}
+
+section {
+    padding: $sectionPaddingVertical $sectionPaddingHorizontal;
+}
+
+section h2 {
+    font-weight: bolder;
+    font-size: 2.25em;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.5em;
+    line-height: 1.55em;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+
+section:last-of-type {
+    padding-bottom: 100px;
+}
+
+.place a:hover, .category_item a:hover, .recipe_item a:hover {
+    color: #339;
+}
+
+.orange {
+    background-color: #993B2B;
+    color: white;
+}
+
+.grayed {
+    background-color: #dbe5ef;
+}
+
+.unselectable {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}

@@ -1,359 +1,164 @@
 <!DOCTYPE html>
+
 <html lang="en">
+    <head>
+        <title>RY PARIS</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+        <meta charset="UTF-8" />
+    </head>
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body>
+        <div class="container">
+            <!-- Navigation -->
+            <header>
+                <div class="logo">
+                    <a class="img-anchor" href="#">
+                        <img class="unselectable" src="src/ryparis-logo.png" href="#" alt="Ry Paris Logo"/>
+                    </a>
+                </div>
 
-    <title>Jordan Christensen</title>
+                <nav>
+                    <div class="navigation">
+                        <a href="html/recipe.html">Popular Recipes</a>
+                        <a href="html/recipe.html">What's New</a>
+                        <a href="html/recipe.html">Categories</a>
+                        <a href="html/recipe.html">Meal Ideas</a>
+                    </div>
+                </nav>
+            </header>
 
-    <meta name="description" content="Portfolio website"/>
-    <meta name="author" content="Jordan Christensen"/>
-    <meta property="og:site_name" content="Jordan Christensen Portfolio"/>
-    <meta property="og:image" content="/src/example.png">
-		
-    <link rel="shortcut icon" href="src/favicon.ico">
-    <link rel="icon" type="image/png" href="/src/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/src/favicon-32x32.png" sizes="32x32">
-	
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/> <!-- Fade in animations - CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> <!-- Social media icons -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<!-- Navigation Menu -->
-<body>
-    <header>
-        <div class="menu-toggle">
-
-            <input type="checkbox"/>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="top-nav" role="navigation">
-            <ul class="nav-list">
-                <li>
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li>
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li>
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-                <!-- <li>
-                    <a href="blog.html" class="nav-link">Blog</a>
-                </li> -->
-                <li>
-                    <p class="nav-link-border unselectable">|</p>
-                </li>
-                <li>
-                    <a href="src/Jordan Christensen Resume.pdf" class="nav-link">Resume</a>
-                </li>
-                <li>
-                    <a href="https://github.com/mazjap/mazjap.github.io" class="nav-link">Source</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="panel" data-color="default">
-            <div class="landing-text">
-                <h1>print("Hello, World!")</h1>
+            <!-- Landing -->
+            <div class="landing">
+                <img class="resizable unselectable" src="src/hero-image.jpg" href="#" alt="Wine, fruits, vegetables, and breads"/>
+                <h1>Start the week off right</h1>
             </div>
-            <div class="scroll-text">
-                <p>Scroll down for more</p>
-            </div>
-        </div>
-    </header>
 
-    <!-- About Me -->
-    <section class="about" id="about">
-        <div class="panel" data-color="extra-light">
-            <div class="container">
-                <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-                    <img src="src/Profile.png" alt="">
-                </div>
-                <div class="about-details" data-aos="fade-left" data-aos-delay="600">
-                    <div class="about-heading">
-                        <h1>Jordan Christensen</h1>
-                        <h2>iOS Developer</h2>
+            <!-- Categories -->
+            <section class="category-section">
+                <h2>Everyday Categories</h2>
+                <p>
+                    Everyday Food has developed recipes with the home cook in mind. These delicious dishes featured on "RY Paris" 
+                    call for simple ingredients that you already have in your pantry or can easily find at local grocery stores and
+                    farmers' markets.
+                </p>
+                <div class="categories spacer-top">
+                    <div class="category_item">
+                        <a href="#">
+                            <img src="src/breakfast-ideas.jpg" href="#" alt="Sausage, eggs, bacon, beans, toast, and coffee" />
+                            <p>Breakfast Most Important Meal</p>
+                        </a>
                     </div>
-                    <p>
-                        I began creating static websites at 14 in HTML and CSS, and after taking AP Computer Science in high school, I fell in love with software development and my career path was set. I attended Lambda School for nine months, specializing in iOS Development and have been creating projects, in a variaty of languages, ever since.
-                    </p>
-                    
-                    <div class="social-media">
-                        <div class="social-details">
-                            <h6>Want to learn more about me?</h6>
-                        </div>
-                        <ul class="nav-list">
-                        <li>
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap" class="icon-link">
-                                    <i class="fab fa-github-square"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jordan-a-christensen/" class="icon-link">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/joshington_1" class="icon-link">
-                                    <i class="fab fa-twitter-square"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Projects -->
-    <section class="projects" id="projects">
-        <div class="panel" data-color="light">
-            <div class="container">
-                <div class="section-heading">
-                    <h1>Recent Projects</h1>
-                </div>
-                <div class="project-item" data-aos="fade-right" data-aos-delay="300">
-                    <div class="project-title">
-                        <h6>Swift</h6>
-                        <h1>Community Calendar</h1>
+                    <div class="category_item">
+                        <a href="#">
+                            <img src="src/vegetarian-ideas.jpg" href="#" alt="Assortment of vegetables" />
+                            <p>Vegetarian Lunch Ideas</p>
+                        </a>
                     </div>
-                    <div class="slidercontainer">
-                        <div class="project1_showSlide fade">
-                            <div class="project-img has-margin-right">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Lambda-School-Labs/community-calendar-ios"><img src="src/projects/project_1/project_1-1.png"></a>
-                            </div>
-                        </div>
-                        <div class="project1_showSlide fade">
-                            <div class="project-img has-margin-right">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Lambda-School-Labs/community-calendar-ios"><img src="src/projects/project_1/project_1-2.png"></a>
-                            </div>
-                        </div>
-                        <div class="project1_showSlide fade">
-                            <div class="project-img has-margin-right">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Lambda-School-Labs/community-calendar-ios"><img src="src/projects/project_1/project_1-3.png"></a>
-                            </div>
-                        </div>
-                        <div class="project1_showSlide fade">
-                            <div class="project-img has-margin-right">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Lambda-School-Labs/community-calendar-ios"><img src="src/projects/project_1/project_1-4.png"></a>
-                            </div>
-                        </div>
-                        <div class="project1_showSlide fade">
-                            <div class="project-img has-margin-right">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Lambda-School-Labs/community-calendar-ios"><img src="src/projects/project_1/project_1-5.png"></a>
-                            </div>
-                        </div>
-                        <!-- Navigation arrows -->
-                        <a class="left" onclick="prevSlide(1)">❮</a>
-                        <a class="right" onclick="nextSlide(1)">❯</a>
-                    </div>
-                    <div class="project-description">
-                        <h2>Technologies: GraphQL, Auth0, CoreData, UIKit, Notification Design Pattern</h2>
-                        <p>Worked on a cross-functional, remote team of 12 developers to build an application that connects you with the events happening within a user's neighborhood. It possesses an intuitive search and filter feature and the ability to add any event to your calendar or get directions in maps.</p>
-                        <p>On this project, I worked on the GraphQL implementation, maps, calendar, custom search and filtering, etc.</p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Lambda-School-Labs/community-calendar-ios" class="view-details">View Project on Github</a>
+
+                    <div class="category_item">
+                        <a href="#">
+                            <img src="src/cold-weather-dinners.jpeg" href="#" alt="Beef, potatoes and gravy" />
+                            <p>Cold-Weather Weeknight Dinners</p>
+                        </a>
                     </div>
                 </div>
-                <div class="project-item" data-aos="fade-left" data-aos-delay="300">
-                    <div class="project-title">
-                        <h6>Swift</h6>
-                        <h1>Habit Hacker</h1>
+            </section>
+
+            <!-- Recipes -->
+            <section class="recipe-section grayed">
+                <h2>Healthy recipes of the week</h2>
+                <p>
+                    This weeks top award winners to critically-acclaimed receipe gems, check out these original recipes from home 
+                    cook and professional chefs around the country.
+                </p>
+
+                <div class="recipes spacer-top">
+                    <div class="recipe_item">
+                        <a href="#">
+                            <img src="src/fajita-peppers.jpeg" href="#" alt="Fajitas with arrangment of sauces" />
+                            <p>Fajita-Stuffed Peppers</p>
+                        </a>
                     </div>
-                    <div class="slidercontainer">
-                        <div class="project2_showSlide fade">
-                            <div class="project-img">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/HabitTracker-iOS"><img src="src/projects/project_2/project_2-1.png"></a>
-                            </div>
-                        </div>
-                        <div class="project2_showSlide fade">
-                            <div class="project-img">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/HabitTracker-iOS"><img src="src/projects/project_2/project_2-2.png"></a>
-                            </div>
-                        </div>
-                        <div class="project2_showSlide fade">
-                            <div class="project-img">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/HabitTracker-iOS"><img src="src/projects/project_2/project_2-3.png"></a>
-                            </div>
-                        </div>
-                        <div class="project2_showSlide fade">
-                            <div class="project-img">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/HabitTracker-iOS"><img src="src/projects/project_2/project_2-4.png"></a>
-                            </div>
-                        </div>
-                        <div class="project2_showSlide fade">
-                            <div class="project-img">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/HabitTracker-iOS"><img src="src/projects/project_2/project_2-5.png"></a>
-                            </div>
-                        </div>
-                        <div class="project2_showSlide fade">
-                            <div class="project-img">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/HabitTracker-iOS"><img src="src/projects/project_2/project_2-6.png"></a>
-                            </div>
-                        </div>
-                        <!-- Navigation arrows -->
-                        <a class="left" onclick="prevSlide(2)">❮</a>
-                        <a class="right" onclick="nextSlide(2)">❯</a>
+
+                    <div class="recipe_item">
+                        <a href="#">
+                            <img src="src/muffins.jpeg" href="#" alt="Muffins" />
+                            <p>Ree's Breakfast Muffins</p>
+                        </a>
                     </div>
-                    <div class="project-description">
-                        <h2>Technologies: CoreData, CloudKit, Local Notifications, JTAppleCalendar</h2>
-                        <p>Habit Hacker was built by myself and one other developer over the course of one week. It is an app that reminds users to complete tasks with enough repetition to become a habit. Sends daily notifications and uses a calendar and pie chart to track progress.</p>
-                        <p>On this project, I implemented CloudKit, as well as Local Notifications, the JTAppleCalendar framework, and a custom navigation bar.</p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/HabitTracker-iOS" class="view-details github">View Project on Github</a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://apps.apple.com/us/app/habit-hacker/id1510059622" class="view-details appstore">View Project on App Store</a>
+
+                    <div class="recipe_item">
+                        <a href="#">
+                            <img src="src/eggplant-parmesan.jpg" href="#" alt="eggplant parmesan" />
+                            <p>Eggplant Parmesan</p>
+                        </a>
+                    </div>
+
+                    <div class="recipe_item">
+                        <a href="#">
+                            <img src="src/teriyaki-chicken.jpeg" href="#" alt="teriyaki chicken" />
+                            <p>Teriyaki Chicken Thighs</p>
+                        </a>
                     </div>
                 </div>
-                <div class="project-item"  data-aos="fade-right" data-aos-delay="300">
-                    <div class="project-title">
-                        <h6>SwiftUI</h6>
-                        <h1>Neomusic</h1>
+            </section>
+
+            <!-- Where to eat -->
+            <section class="places-section">
+                <h2>Where To Eat</h2>
+                <p>
+                    This is not the aspirational fluff of instagram wall neon; it's fact. Recent surveys have shown that a majority 
+                    of travelers consider food first when planning a trip, even ahead of where they sleep. Add to this that people 
+                    are also traveling more than ever before — earthlings logged a record-breaking 1.4 billion trips last year — and
+                    it's safe to say that the hunger for new culinary experiences is more ravenous than ever.
+                </p>
+
+                <p>
+                    While the endlessly alluring bistros of Paris, izakayas of Tokyo, shawarma stands of Tel Aviv, and tasting menus
+                    of Mexico City will always top many people's lists of cravings, we're continually on the lookout for something to
+                    fill our bellies, our passports, and our feeds.
+                </p>
+
+                <div class="places">
+                    <div class="place">
+                        <a href="html/recipe.html">
+                            <img class="grayed" src="src/burger.jpg" href="#" alt="Sausage, eggs, bacon, beans, toast, and coffee" />
+                            <p>Best Sandwiches in America</p>
+                        </a>
                     </div>
-                    <div class="slidercontainer">
-                        <div class="project3_showSlide fade">
-                            <div class="project-img">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/NeoMusic-SwiftUI"><img src="src/projects/project_3/project_3-1.png"></a>
-                            </div>
-                        </div>
-                        <div class="project3_showSlide fade">
-                            <div class="project-img">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/NeoMusic-SwiftUI"><img src="src/projects/project_3/project_3-2.png"></a>
-                            </div>
-                        </div>
-                        <div class="project3_showSlide fade">
-                            <div class="project-img">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/NeoMusic-SwiftUI"><img src="src/projects/project_3/project_3-3.png"></a>
-                            </div>
-                        </div>
-                        <!-- Navigation arrows -->
-                        <a class="left" onclick="prevSlide(3)">❮</a>
-                        <a class="right" onclick="nextSlide(3)">❯</a>
+
+                    <div class="place">
+                        <a href="#">
+                            <img class="grayed" src="src/pizza.jpeg" href="#" alt="Assortment of vegetables" />
+                            <p>50 States of Pizza Slices</p>
+                        </a>
                     </div>
-                    <div class="project-description">
-                        <h2>Technologies: MediaKit, SwiftUI, Combine</h2>
-                        <p>A beautiful music player with a design based in Neumorphism made to get a better understanding of SwiftUI. Try it out if you have Apple Music.</p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/NeoMusic" class="view-details">View Project on Github</a>
-                    </div>
-                </div>
-                <div class="project-item" data-aos="fade-left" data-aos-delay="300">
-                    <div class="project-title has-margin-right">
-                        <h6>Objective-C</h6>
-                        <h1>Pokédex</h1>
-                    </div>
-                    <div class="slidercontainer">
-                        <div class="project4_showSlide fade">
-                            <div class="project-img">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/Pokedex"><img src="src/projects/project_4/project_4-1.png"></a>
-                            </div>
-                        </div>
-                        <div class="project4_showSlide fade">
-                            <div class="project-img">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/Pokedex"><img src="src/projects/project_4/project_4-2.png"></a>
-                            </div>
-                        </div>
-                        <div class="project4_showSlide fade">
-                            <div class="project-img">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/Pokedex"><img src="src/projects/project_4/project_4-3.png"></a>
-                            </div>
-                        </div>
-                        <div class="project4_showSlide fade">
-                            <div class="project-img">
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/Pokedex"><img src="src/projects/project_4/project_4-4.png"></a>
-                            </div>
-                        </div>
-                        <!-- Navigation arrows -->
-                        <a class="left" onclick="prevSlide(4)">❮</a>
-                        <a class="right" onclick="nextSlide(4)">❯</a>
-                    </div>
-                    <div class="project-description">
-                        <h2>Technologies: UserDefaults, URLSession, Objective-C and Swift</h2>
-                        <p>A pokédex to catalog and learn more about all of the Pokémon users find. This solo project was made to practice mixing Objective-C and Swift, while incorporating something that I have enjoyed for years, Pokémon.</p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/mazjap/Pokedex" class="view-details">View Project on Github</a>
+
+                    <div class="place">
+                        <a href="#">
+                            <img class="grayed" src="src/cold-weather-dinners.jpeg" href="#" alt="Beef, potatoes and gravy" />
+                            <p>City Guides</p>
+                        </a>
                     </div>
                 </div>
+            </section>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>&copy; 2021 RY Paris</p>
+
+                <ul>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="experience" id="experience">
-        <div class="panel" data-color="med">
-            <div class="container">
-                <div class="section-heading">
-                    <h1>Experience</h1>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                        
-                        <div class="timeline-content" data-aos="fade-right" data-aos-delay="300">
-                            <h2>Lambda School</h2>
-                            <div class="date">2019 - 2020</div>
-                            <p>Completed and endorsed by Lambda School: A nine-month computer science & software engineering program with an immersive hands-on curriculum focused on iOS Development as well as engaging Python, algorithms, data structures, graphs, Django, C, as well as other operating systems.</p>
-                            <a class="bnt-more" rel="noopener noreferrer" href="https://lambdaschool.com">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                                    
-                        <div class="timeline-content" data-aos="fade-left" data-aos-delay="300">
-                            <h2>dōTERRA</h2>
-                            <div class="date">2018 - 2019</div>
-                            <p>Worked as a customer service representative where I assisted customers with product-related issues and orders.</p>
-                            <a class="bnt-more" rel="noopener noreferrer" href="https://www.doterra.com/US/en">Learn More</a>
-                        </div>
-                        </div>
-                    <div class="timeline-item">
-                        <div class="timeline-img"></div>
-                            
-                        <div class="timeline-content" data-aos="fade-right" data-aos-delay="300">
-                            <h2>Shanghai American School</h2>
-                            <div class="date">2017 - 2018</div>
-                            <p>Lived in Shanghai, China for 2 years where I took AP Computer Science in Java and learned the fundamentals of computers.</p>
-                            <a class="bnt-more" rel="noopener noreferrer" href="https://www.saschina.org">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact" id="contact" data-aos="fade-in" data-aos-delay="300">
-        <div class="panel" data-color="dark">
-            <div class="container">
-                <div class="section-heading">
-                    <h1>Contact Me</h1>
-                </div>
-                <form action="https://formspree.io/xqkedzrn" method="POST">
-                    <label for="name">Name:</label>
-                    <input for="text" id="name" name="Name" type="text" placeholder="Name" required>
-                    <label for="email">Email:</label>
-                    <input for="text" id="email" name="Email" type="email" placeholder="Email" required>
-                    <label for="subject">Subject:</label>
-                    <input for="text" id="subject" name="Subject" placeholder="Subject" required>
-                    <label for="body">Message:</label>
-                    <textarea name="Body" id="Submit" placeholder="Message" cols="10" rows="10" required></textarea>
-                    <input type="submit" value="Send">
-                </form>
-            </div>
-        </div>
-    </section>
-    <footer class="copyright">
-        <div class="up" id="up">
-            <i class="fas fa-chevron-up"></i>
-        </div>
-        <p>&copy; Jordan Christensen 2019 - 2020</p>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jQuery -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- Fade in animations - JavaScript -->
-    <script src="js/script.js"></script>
-</body>
-
+    </body>
 </html>
