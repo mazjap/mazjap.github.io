@@ -1,0 +1,75 @@
+$tabletBreakpoint: 768px;
+
+$mainColor: black;
+$anchorHoverColor: #88a;
+$secondaryColor: darkgray;
+$backgroundColor: #eee;
+
+$default-padding: 15px;
+$overridden-padding-bottom: 50px;
+$subSectionBottomPadding: 10px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $mainColor;
+    transition: all 0.25s;
+}
+
+a:hover {
+    color: $anchorHoverColor;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 1.75em;
+    font-weight: 500;
+    color: $secondaryColor;
+}
+
+.flexed-content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+section {
+    padding: $default-padding;
+    padding-bottom: $overridden-padding-bottom;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+
+    h2::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 6px;
+        background-color: $mainColor;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h2 {
+    padding-bottom: $subSectionBottomPadding;
+}
